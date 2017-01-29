@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TimeEntryForm from '../TimeEntryForm';
+import TimeEntryList from '../TimeEntryList';
 import './app.css';
 
 class App extends Component {
@@ -11,7 +12,10 @@ class App extends Component {
             <b>Tempus</b>
           </div>
         </div>
-        <TimeEntryForm />
+        <div className="Container">
+          <TimeEntryForm />
+          <TimeEntryList />
+        </div>
       </div>
     );
   }
