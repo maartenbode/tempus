@@ -6,10 +6,11 @@ Time tracking web application.
 
 ## Installation
 
+- Run a MongoDB server locally on the default port :27018 (not configurable for now...)
 - Install dependencies `npm install`
 - Build front-end `npm run build`
 - Boot the server `npm run server`
-- Open `localhost:1748` in your browser
+- Open `http://localhost:1748` in your browser
 
 ## Usage
 
