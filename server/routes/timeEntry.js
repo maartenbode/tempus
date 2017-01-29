@@ -9,9 +9,9 @@ module.exports = (app) => {
       find().
       sort({ started_at: -1 }).
       exec((err, entries) => {
-        res.json(lodash.groupBy(entries, (entry) => {
-          return moment(entry.started_at).format('YYYY-MM-DD')
-        }));
+        res.json(lodash.groupBy(entries, (entry) => (
+          moment(entry.started_at).format('YYYY-MM-DD')
+        )));
       });
   });
 
