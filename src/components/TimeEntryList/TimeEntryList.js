@@ -9,12 +9,12 @@ class TimeEntryList extends Component {
   }
 
   render() {
-    const { fetching, entries } = this.props;
+    const { fetching, fetched, entries } = this.props;
 
     return (
       <div className="TimeEntryList">
         <hr/>
-        {fetching ? (
+        {fetching && !fetched ? (
           'Loading...'
         ) : map(entries, (entries, date) => (
           <div key={date}>

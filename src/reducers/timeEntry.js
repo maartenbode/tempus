@@ -2,6 +2,7 @@ const initialState = {
   entries: {},
   fetching: false,
   fetched: false,
+  saving: false,
   error: null
 };
 
@@ -30,6 +31,20 @@ export default function reducer(state = initialState, action) {
         fetched: true,
         entries: action.payload.data,
       };
+    }
+
+    case 'STORE_TIME_ENTRY_PENDING': {
+      return {
+        ...state,
+        saving: true,
+      }
+    }
+
+    case 'STORE_TIME_ENTRY_FULFILLED': {
+      return {
+        ...state,
+        saving: false,
+      }
     }
 
     default: {
