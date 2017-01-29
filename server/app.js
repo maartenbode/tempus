@@ -46,6 +46,6 @@ app.delete('/api/time-entry/:id', (req, res) => {
 });
 
 // Boot server
-app.listen(4000, () => {
-  console.log('Example app listening on port 4000!');
+app.listen(1748, () => {
+  console.log('Example app listening on port 1748!');
 });

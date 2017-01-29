@@ -9,7 +9,7 @@ Time tracking web application.
 - Install dependencies `npm install`
 - Build front-end `npm run build`
 - Boot the server `npm run server`
-- Open `localhost:4000` in your browser
+- Open `localhost:1748` in your browser
 
 ## Usage
 
