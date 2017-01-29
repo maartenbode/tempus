@@ -68,7 +68,7 @@ class TimeEntryForm extends Component {
 
   render() {
     return (
-      <div className="TimeEntryForm">
+      <div className="TimeEntryForm Card">
         <h3>New Entry</h3>
         <input
           type="text"
@@ -88,7 +88,7 @@ class TimeEntryForm extends Component {
         <button
           onClick={this.handleRequest.bind(this)}
         >
-          {this.state.timer ? 'Stop Timer' : 'Save'}
+          {this.state.timer ? 'Stop' : 'Save'}
         </button>
       </div>
     );

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import TimeEntryForm from '../TimeEntryForm';
 import TimeEntryList from '../TimeEntryList';
-import './app.css';
 
 class App extends Component {
   render() {
